@@ -23,13 +23,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Partifcipant {
+public class Participant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     
-
     @Column(name = "is_confirmed", nullable = false)
     private boolean isConfirmed;
 
@@ -42,5 +41,12 @@ public class Partifcipant {
     @ManyToOne
     @JoinColumn(name = "trip_id", nullable = false)
     private Trip trip;
+
+    public Participant(String email, Trip trip) {
+        this.email = email;
+        this.trip = trip;
+        this.isConfirmed = false;
+        this.name = "";
+    }
     
 }
