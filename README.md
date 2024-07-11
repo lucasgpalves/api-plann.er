@@ -42,24 +42,24 @@ Este projeto foi desenvolvido para oferecer uma solução prática e eficiente p
 1. Clone o repositório:
    ```sh
    git clone https://github.com/seu-usuario/plann.er.git
-```
+   ```
 2. Navegue até o diretório do projeto:
-```sh
-  cd plann.er
-```
+   ```sh
+   cd plann.er
+   ```
 3. Configure o banco de dados no arquivo **`application.properties`**.
 4. Execute as migrations do Flyway para configurar o banco de dados:
-```sh
-./mvn flyway:migrate
-```
+   ```sh
+   ./mvn flyway:migrate
+   ```
 5. Inicie a aplicação:
-```sh
-./mvnw spring-boot:run
-```
+   ```sh
+   ./mvnw spring-boot:run
+   ```
 6. Acesse a aplicação no navegador:
-```sh
-http://localhost:8080
-```
+   ```sh
+   http://localhost:8080
+   ```
 
 ---
 #### Contribuições
