@@ -1,6 +1,6 @@
 # Plann.er
 
-![banner](Wallpaper- 2560x1600.png (2560×1600))
+![banner](banner.jpg)
 
 Projeto criado com a [Rocketseat](https://www.linkedin.com/school/rocketseat/) com a professora [Fernanda Kipper](https://www.linkedin.com/in/fernanda-kipper/) na trilha de Java.
 
