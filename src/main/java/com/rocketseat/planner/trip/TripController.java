@@ -2,6 +2,7 @@ package com.rocketseat.planner.trip;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.rocketseat.planner.participant.ParticipantCreateResponse;
+import com.rocketseat.planner.participant.ParticipantData;
 import com.rocketseat.planner.participant.ParticipantRequestPayload;
 import com.rocketseat.planner.participant.ParticipantService;
 
@@ -97,5 +99,13 @@ public class TripController {
         }
 
         return ResponseEntity.notFound().build();
+    }
+
+    @GetMapping("/{id}/participants")
+    public ResponseEntity<List<ParticipantData>> getAllParticipants(@PathVariable UUID id) {
+
+        List<ParticipantData> participantList = this.participantService.getAllParticipantsFromEvent(id);
+
+        return ResponseEntity.ok(participantList);
     }
 }

@@ -28,6 +28,8 @@ public class ParticipantController {
             rawParticipant.setConfirmed(true);
             rawParticipant.setName(payload.name());
 
+            this.repository.save(rawParticipant);
+
             return ResponseEntity.ok(rawParticipant);
         }
 
