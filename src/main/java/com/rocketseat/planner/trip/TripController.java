@@ -37,14 +37,13 @@ public class TripController {
     private ParticipantService participantService;
 
     @Autowired
-    private TripRepository repository;
-
-    @Autowired
     private ActivityService activityService;
-
+    
     @Autowired
     private LinkService linkService;
-
+    
+    @Autowired
+    private TripRepository repository;
     // Trip
 
     @PostMapping
