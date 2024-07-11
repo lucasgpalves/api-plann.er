@@ -1,6 +1,6 @@
 # Plann.er
 
-![banner](./banner.jpg)
+![banner]([./banner.jpg](https://github.com/lucasgpalves/plann.er-java/blob/main/banner.jpg))
 
 Projeto criado com a [Rocketseat](https://www.linkedin.com/school/rocketseat/) com a professora [Fernanda Kipper](https://www.linkedin.com/in/fernanda-kipper/) na trilha de Java.
 
